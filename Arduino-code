@@ -1,11 +1,14 @@
 
 
-void setup() {
-  // put your setup code here, to run once:
-
+void setup() 
+{
+  pinMode(7, OUTPUT) ;     //connected to 2 of the H-bridge
+  pinMode(8, OUTPUT) ;     //connected to 7 of the H-bridge
+  Serial.begin(9600) ;     //used for testing
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-
+void loop() 
+{
+  digitalWrite(7, HIGH);
+  digitalWrite(8, LOW);
 }
